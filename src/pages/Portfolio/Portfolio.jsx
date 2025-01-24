@@ -22,7 +22,7 @@ const Portfolio = () => {
     {
       id: 3,
       title: "Calorie Burnt Predictor",
-      video: "./assets/videos/Calori-Burnt-Predictor.mp4",
+      video: "https://drive.google.com/file/d/1EgH05I6DnK74B2aysgmxlPEROLCxVkOk/view?usp=sharing",
       shortDescription: "A web app uses machine learning to predict calories burned during exercise based on inputs like  ",
       longDescription: " duration, gender, weight, height, body temperature, and heart rate. This project showcases machine learning from data cleaning to deployment via a user-friendly web interface.",
       github: "https://github.com/Astha-950/Calorie-Burnt-Predictor-",
