@@ -69,7 +69,7 @@ const Portfolio = () => {
                         src={project.video}
                         className="iframe-item"
                         width="100%"
-                        height="315"
+                        height="170px"
                         allow="autoplay; encrypted-media"
                         allowFullScreen
                         title={project.title}
