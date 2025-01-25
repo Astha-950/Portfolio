@@ -6,26 +6,29 @@ const Portfolio = () => {
     {
       id: 1,
       title: "Animated Solar System",
-      video: "./assets/videos/solar-system.mp4",
+      video: "https://drive.google.com/file/d/1v9v8KV9Fcty-h_6gDil9M6ibeeap0XfJ/preview",
       shortDescription: "This project is a visual depiction of the solar system created using HTML, CSS, and JavaScript.",
       longDescription: "The project showcases interactive 2D and 3D planet models with info cards, highlighting my front-end web development skills.",
       github: "https://github.com/Astha-950/Animated-Solar-System",
+      type: "iframe",  
     },
     {
       id: 2,
       title: "Organic",
-      video: "./assets/videos/organic.mp4",
+      video: "https://drive.google.com/file/d/1mPshD0bnK_rl5Jvchfc2j1cUpE3evMuW/preview",
       shortDescription: "Organic is an e-commerce platform dedicated to providing fresh and high-quality organic fruits and ",
       longDescription: " vegetables. We aim to offer sustainably sourced, chemical-free produce. Customers can easily explore organic products and add them to their cart using our user-friendly interface.",
       github: "https://github.com/Astha-950/Organic",
+       type: "iframe",  
     },
     {
       id: 3,
       title: "Calorie Burnt Predictor",
-      video: "https://drive.google.com/file/d/1EgH05I6DnK74B2aysgmxlPEROLCxVkOk/view?usp=sharing",
+      video: "https://drive.google.com/file/d/1EgH05I6DnK74B2aysgmxlPEROLCxVkOk/preview", 
       shortDescription: "A web app uses machine learning to predict calories burned during exercise based on inputs like  ",
       longDescription: " duration, gender, weight, height, body temperature, and heart rate. This project showcases machine learning from data cleaning to deployment via a user-friendly web interface.",
       github: "https://github.com/Astha-950/Calorie-Burnt-Predictor-",
+      type: "iframe", 
     },
   ];
 
@@ -51,15 +54,27 @@ const Portfolio = () => {
             return (
               <li className="project-item" key={project.id}>
                 <div className="project-card">
-                  {/* Upper half: Video */}
+                  {/* Upper half: Video or Iframe */}
                   <div className="video-container">
-                    <video
-                      src={project.video}
-                      loading="lazy"
-                      className="video-item"
-                      style={{ objectFit: "contain" }}
-                      controls
-                    />
+                    {project.type === "video" ? (
+                      <video
+                        src={project.video}
+                        loading="lazy"
+                        className="video-item"
+                        style={{ objectFit: "contain" }}
+                        controls
+                      />
+                    ) : (
+                      <iframe
+                        src={project.video}
+                        className="iframe-item"
+                        width="100%"
+                        height="315"
+                        allow="autoplay; encrypted-media"
+                        allowFullScreen
+                        title={project.title}
+                      />
+                    )}
                   </div>
                   {/* Lower half: Title, Description */}
                   <div className="project-details">
