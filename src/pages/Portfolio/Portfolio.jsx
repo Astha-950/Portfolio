@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 const Portfolio = () => {
-  // Define the project data directly in this file
+  
   const projects = [
     {
       id: 1,
@@ -34,7 +34,7 @@ const Portfolio = () => {
 
   const [expandedProjectId, setExpandedProjectId] = useState(null); // State to track expanded project
 
-  // Toggle the expanded state for a specific project
+ 
   const toggleExpand = (projectId) => {
     setExpandedProjectId((prevId) => (prevId === projectId ? null : projectId));
   };
@@ -45,7 +45,7 @@ const Portfolio = () => {
         <h2 className="h2 article-title">Portfolio</h2>
       </header>
 
-      {/* Portfolio items */}
+      {}
       <section className="projects">
         <ul className="project-list">
           {projects.map((project) => {
@@ -54,7 +54,7 @@ const Portfolio = () => {
             return (
               <li className="project-item" key={project.id}>
                 <div className="project-card">
-                  {/* Upper half: Video or Iframe */}
+                  {}
                   <div className="video-container">
                     {project.type === "video" ? (
                       <video
@@ -76,7 +76,7 @@ const Portfolio = () => {
                       />
                     )}
                   </div>
-                  {/* Lower half: Title, Description */}
+                  {}
                   <div className="project-details">
                     <h3 className="project-title">
                       <a
