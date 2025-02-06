@@ -1,10 +1,6 @@
  :root {
 
-   /**
-   * colors
-   */
-
-   /* gradient */
+  
 
    --bg-gradient-onyx: linear-gradient(to bottom right,
        hsl(240, 1%, 25%) 3%,
@@ -24,32 +20,30 @@
    --text-gradient-yellow: linear-gradient(to right,
        rgb(56 189 248));
 
-   /* solid */
+ 
 
    --jet: hsl(0, 0%, 22%);
    --onyx: hsl(240, 1%, 17%);
    --eerie-black-1: hsl(240, 2%, 13%);
-   /* --eerie-black-2: hsl(240, 2%, 12%); */
+   
    --eerie-black-2: rgb(11 17 32);
-   /* --smoky-black: hsl(0, 0%, 7%); */
+  
    --smoky-black: rgb(15 23 42);
    --white-1: hsl(0, 0%, 100%);
    --white-2: hsl(0, 0%, 98%);
-   /* --orange-yellow-crayola: hsl(45, 100%, 72%); */
+   
    --orange-yellow-crayola: rgb(56 189 248);
    --vegas-gold: hsl(45, 54%, 58%);
    --light-gray: hsl(0, 0%, 84%);
    --light-gray-70: hsla(0, 0%, 84%, 0.7);
    --bittersweet-shimmer: hsl(15, 100%, 50%);
+    
+   
 
-   /**
-   * typography
-   */
-
-   /* font-family */
+    
    --ff-poppins: 'Poppins', sans-serif;
 
-   /* font-size */
+   
    --fs-1: 24px;
    --fs-2: 18px;
    --fs-3: 17px;
@@ -59,15 +53,13 @@
    --fs-7: 13px;
    --fs-8: 11px;
 
-   /* font-weight */
+  
    --fw-300: 300;
    --fw-400: 400;
    --fw-500: 500;
    --fw-600: 600;
 
-   /**
-   * shadow
-   */
+   
 
    --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
    --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.25);
@@ -75,9 +67,7 @@
    --shadow-4: 0 25px 50px hsla(0, 0%, 0%, 0.15);
    --shadow-5: 0 24px 80px hsla(0, 0%, 0%, 0.25);
 
-   /**
-   * transition
-   */
+    
 
    --transition-1: 0.25s ease;
    --transition-2: 0.5s ease-in-out;
@@ -88,9 +78,7 @@
 
 
 
- /*-----------------------------------*\
-  #RESET
-\*-----------------------------------*/
+  
 
  *,
  *::before,
@@ -154,14 +142,12 @@
 
 
 
- /*-----------------------------------*\
-  #REUSED STYLE
-\*-----------------------------------*/
+  
 
  .sidebar,
  article {
    background: var(--eerie-black-2);
-   /* border: 1px solid var(--jet); */
+   
    border-radius: 20px;
    padding: 15px;
    box-shadow: var(--shadow-1);
@@ -170,7 +156,7 @@
 
  section {
    background: var(--eerie-black-2);
-   /* border: 1px solid var(--jet); */
+    
    padding: 15px;
    border-radius: 20px;
  }
@@ -282,9 +268,9 @@
 
  .has-scrollbar::-webkit-scrollbar {
    width: 5px;
-   /* for vertical scrollbar */
+   
    height: 5px;
-   /* for horizontal scrollbar */
+   
  }
 
  .has-scrollbar::-webkit-scrollbar-track {
@@ -812,9 +798,9 @@
 
  .fill {
    background-color: #00bcd4;
-   /* Update with desired color */
+   
    transition: all 1s ease-out;
-   /* Add smooth transition */
+   
  }
 
 
@@ -832,7 +818,7 @@
 
  .circle-logo {
    width: 50px;
-   /* Adjust size as needed */
+   
    height: 50px;
    border-radius: 50%;
    object-fit: contain;
@@ -861,7 +847,7 @@
    background-color: #0B1120;
 
    
-   color: #fff;
+   color: white;
    transition: all 0.3s ease;
    overflow: hidden;
  }
@@ -875,7 +861,7 @@
 
    height: 170px;
   background-color: black;
-   /* Adjust as needed */
+   
 
  }
 
@@ -905,11 +891,11 @@
    font-size: 1.2em;
    font-weight: bold;
    margin-bottom: 8px;
-   color: #fff;
+   color: white;
  }
 
  .project-title a {
-   color: #fff;
+   color: white;
    text-decoration: none;
  }
 
@@ -943,7 +929,6 @@
 
  .project-details .form-btn {
    margin-top: 19px;
-   /* Adds spacing below the description */
    width: 100%;
    height: 40px;
  }
@@ -953,14 +938,12 @@
  @media (max-width: 768px) {
    .project-item {
      width: calc(50% - 20px);
-     /* Two cards per row on smaller screens */
    }
  }
 
  @media (max-width: 480px) {
    .project-item {
      width: 100%;
-     /* One card per row on very small screens */
    }
  }
 
@@ -1101,22 +1084,9 @@
   #RESPONSIVE
 \*-----------------------------------*/
 
- /**
- * responsive larger than 450px screen
- */
-
+  
  @media (min-width: 450px) {
-
-   /**
-   * client
-   */
-
-
-
-
-   /**
-   * #PORTFOLIO, BLOG 
-   */
+ 
 
    .project-img {
      height: auto;
@@ -1128,21 +1098,15 @@
 
 
 
- /**
- * responsive larger than 580px screen
- */
+  
 
  @media (min-width: 580px) {
 
-   /**
-   * CUSTOM PROPERTY
-   */
+   
 
    :root {
 
-     /**
-     * typography
-     */
+     
 
      --fs-1: 32px;
      --fs-2: 24px;
@@ -1346,7 +1310,7 @@
 
 
    /**
-   * #PORTFOLIO, BLOG
+   * #PORTFOLIO 
    */
 
    .project-img {
@@ -1400,9 +1364,7 @@
 
  @media (min-width: 768px) {
 
-   /**
-   * REUSED STYLE
-   */
+    
 
    .sidebar,
    article {
@@ -1482,7 +1444,7 @@
      color: var(--orange-yellow-crayola);
    }
 
-   /* portfolio and blog grid */
+   /* portfolio   */
 
    .project-list {
      grid-template-columns: 1fr 1fr;
@@ -1515,9 +1477,7 @@
 
  @media (min-width: 1024px) {
 
-   /**
-   * CUSTOM PROPERTY
-   */
+   
 
    :root {
 
@@ -1532,10 +1492,7 @@
    }
 
 
-
-   /**
-   * REUSED STYLE
-   */
+ 
 
    .sidebar,
    article {
@@ -1588,9 +1545,7 @@
 
 
 
-   /**
-   * ABOUT
-   */
+    
 
    /* service */
 
@@ -1599,7 +1554,7 @@
      gap: 20px 25px;
    }
 
-   /* testimonials */
+    
 
 
 
@@ -1614,9 +1569,7 @@
 
 
 
-   /**
-   * BLOG
-   */
+   
 
 
 
@@ -1632,10 +1585,7 @@
 
  @media (min-width: 1250px) {
 
-   /**
-   * RESET
-   */
-
+   
    body::-webkit-scrollbar {
      width: 20px;
    }
@@ -1662,9 +1612,7 @@
 
 
 
-   /**
-   * REUSED STYLE
-   */
+   
 
    .sidebar,
    article {
