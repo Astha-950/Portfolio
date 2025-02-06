@@ -86,9 +86,9 @@ const Aside = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        {/* GFG Logo as Image */}
+        
         <img
-          src="./images/gfg-logo.png" // Path to the image
+          src="./images/gfg-logo.png" 
           alt="GeeksforGeeks"
           style={{ width: 40, height: 40 ,borderRadius: "50%" }}
         />
