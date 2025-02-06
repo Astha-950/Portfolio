@@ -5,7 +5,7 @@
 import React from 'react';
 import '../../src/App.css';
 
-const CircularProgress = ({ percentage, label, logo }) => {
+const CircularProgress = ({ label, logo }) => {
   return (
     <div className="progress-circle">
       <div className="outer">
