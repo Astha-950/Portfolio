@@ -1,42 +1,45 @@
-import { useState } from 'react';
+import { useState } from "react";
 
 const Portfolio = () => {
-  
   const projects = [
     {
       id: 1,
-      title: "Animated Solar System",
-      video: "https://drive.google.com/file/d/1v9v8KV9Fcty-h_6gDil9M6ibeeap0XfJ/preview",
-      shortDescription: "This project is a visual depiction of the solar system created using HTML, CSS, and JavaScript.",
-      longDescription: "The project showcases interactive 2D and 3D planet models with info cards, highlighting my front-end web development skills.",
-      github: "https://github.com/Astha-950/Animated-Solar-System",
-      type: "iframe",  
+      title: "Suraksha Setu",
+      image: "/images/SurakshaSetu.png",
+      shortDescription:
+        "SurakshaSetu is a women-centric platform created to provide support, awareness, and safety resources for women.",
+      longDescription:
+        "The project aims to build a safe digital space where women can share experiences, seek help, and stay informed about real-life issues affecting them.",
+      github: "https://github.com/Astha-950/SurakshaSetu",
     },
     {
       id: 2,
-      title: "Organic",
-      video: "https://drive.google.com/file/d/1mPshD0bnK_rl5Jvchfc2j1cUpE3evMuW/preview",
-      shortDescription: "Organic is an e-commerce platform dedicated to providing fresh and high-quality organic fruits and ",
-      longDescription: " vegetables. We aim to offer sustainably sourced, chemical-free produce. Customers can easily explore organic products and add them to their cart using our user-friendly interface.",
-      github: "https://github.com/Astha-950/Organic",
-       type: "iframe",  
+      title: "Health Mate",
+      image: "/images/Health-Mate.png",
+      shortDescription:
+        "Health Mate is an AI-powered health companion designed to support women in managing PCOS.",
+      longDescription:
+        "The application leverages machine learning to analyze women's health data for personalized health recommendations.",
+      github: "https://github.com/Astha-950/Health-Mate",
     },
     {
       id: 3,
       title: "Calorie Burnt Predictor",
-      video: "https://drive.google.com/file/d/1EgH05I6DnK74B2aysgmxlPEROLCxVkOk/preview", 
-      shortDescription: "A web app uses machine learning to predict calories burned during exercise based on inputs like  ",
-      longDescription: " duration, gender, weight, height, body temperature, and heart rate. This project showcases machine learning from data cleaning to deployment via a user-friendly web interface.",
+      image: "/images/CalorieBurntPredictor.png",
+      shortDescription:
+        "A web app that uses machine learning to predict calories burned during exercise.",
+      longDescription:
+        "This project showcases machine learning from data cleaning to deployment via a user-friendly web interface.",
       github: "https://github.com/Astha-950/Calorie-Burnt-Predictor-",
-      type: "iframe", 
     },
   ];
 
-  const [expandedProjectId, setExpandedProjectId] = useState(null); // State to track expanded project
+  const [expandedProjectId, setExpandedProjectId] = useState(null);
 
- 
   const toggleExpand = (projectId) => {
-    setExpandedProjectId((prevId) => (prevId === projectId ? null : projectId));
+    setExpandedProjectId((prevId) =>
+      prevId === projectId ? null : projectId
+    );
   };
 
   return (
@@ -45,7 +48,6 @@ const Portfolio = () => {
         <h2 className="h2 article-title">Portfolio</h2>
       </header>
 
-      {}
       <section className="projects">
         <ul className="project-list">
           {projects.map((project) => {
@@ -54,44 +56,41 @@ const Portfolio = () => {
             return (
               <li className="project-item" key={project.id}>
                 <div className="project-card">
-                  {}
+                  {/* Image Section */}
                   <div className="video-container">
-                    {project.type === "video" ? (
-                      <video
-                        src={project.video}
-                        loading="lazy"
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src={project.image}
+                        alt={project.title}
                         className="video-item"
                         style={{ objectFit: "contain" }}
-                        controls
                       />
-                    ) : (
-                      <iframe
-                        src={project.video}
-                        className="iframe-item"
-                        width="100%"
-                        height="170px"
-                        allow="autoplay; encrypted-media"
-                        allowFullScreen
-                        title={project.title}
-                      />
-                    )}
+                    </a>
                   </div>
-                  {}
+
+                  {/* Details Section */}
                   <div className="project-details">
                     <h3 className="project-title">
                       <a
                         href={project.github}
                         target="_blank"
                         rel="noopener noreferrer"
-                        title="Visit GitHub"
                       >
                         {project.title}
                       </a>
                     </h3>
+
                     <p className="project-description">
                       {project.shortDescription}
-                      {isExpanded && <span>{project.longDescription}</span>}
+                      {isExpanded && (
+                        <span> {project.longDescription}</span>
+                      )}
                     </p>
+
                     <button
                       className="form-btn"
                       onClick={() => toggleExpand(project.id)}
