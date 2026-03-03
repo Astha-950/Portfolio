@@ -2,8 +2,28 @@ import { useState } from "react";
 
 const Portfolio = () => {
   const projects = [
-    {
+     {
       id: 1,
+      title: "AssistIQ",
+      image: "/images/assistiq.png",
+      shortDescription:
+        "AssistIQ is an AI-powered productivity assistant built to help students manage tasks, track struggles, and learn more effectively.",
+      longDescription:
+        "The project aims to create an intelligent study companion that uses RAG-based systems to answer questions from personal notes, generate daily plans, and automatically organize tasks and learning progress.",
+      github: "https://github.com/Astha-950/AssistIQ",
+    },
+     {
+      id: 2,
+      title: "Sahaara",
+      image: "/images/shaara.png",
+      shortDescription:
+        "Sahaara is a safety aware AI assistant designed to provide emotional support and connect users to real world help when needed.",
+      longDescription:
+        "The project focuses on creating a responsible conversational AI system that analyzes emotional intent, offers empathetic responses, recommends nearby therapists, and enables emergency escalation to ensure user safety.",
+      github: "https://github.com/Astha-950/Sahaara",
+    },
+    {
+      id: 3,
       title: "Suraksha Setu",
       image: "/images/SurakshaSetu.png",
       shortDescription:
@@ -13,7 +33,7 @@ const Portfolio = () => {
       github: "https://github.com/Astha-950/SurakshaSetu",
     },
     {
-      id: 2,
+      id: 4,
       title: "Health Mate",
       image: "/images/Health-Mate.png",
       shortDescription:
@@ -22,16 +42,7 @@ const Portfolio = () => {
         "The application leverages machine learning to analyze women's health data for personalized health recommendations.",
       github: "https://github.com/Astha-950/Health-Mate",
     },
-    {
-      id: 3,
-      title: "Calorie Burnt Predictor",
-      image: "/images/CalorieBurntPredictor.png",
-      shortDescription:
-        "A web app that uses machine learning to predict calories burned during exercise.",
-      longDescription:
-        "This project showcases machine learning from data cleaning to deployment via a user-friendly web interface.",
-      github: "https://github.com/Astha-950/Calorie-Burnt-Predictor-",
-    },
+     
   ];
 
   const [expandedProjectId, setExpandedProjectId] = useState(null);
