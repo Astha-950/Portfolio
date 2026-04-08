@@ -8,7 +8,7 @@ const SkillItem = () => {
   const skills = [
     // { label: 'C++', logo:"https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png" },
     { label: 'C++', logo:"https://img.icons8.com/?size=100&id=40669&format=png&color=000000" },
-    { label: 'Python', logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png" },
+    { label: 'Python', logo: "https://img.icons8.com/?size=100&id=13441&format=png&color=000000" },
     { label: 'HTML', logo: "https://cdn.iconscout.com/icon/free/png-256/free-html-5-logo-icon-download-in-svg-png-gif-file-formats--programming-langugae-language-pack-logos-icons-1175208.png" },
     { label: 'CSS', logo: "https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" },
     { label: 'JavaScript', logo: "https://e7.pngegg.com/pngimages/87/538/png-clipart-javascript-scalable-graphics-logo-encapsulated-postscript-javascript-icon-text-logo-thumbnail.png" },
